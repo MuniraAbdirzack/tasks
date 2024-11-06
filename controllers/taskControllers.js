@@ -39,12 +39,14 @@ exports.createTasks = (req, res) =>{
 
 }
 
-exports.updateTask = (req,res) =>{
-    res.end(JSON.stringify({
-        message: 'not implemented',
-    }))
-
-}
-exports.deleteTask = (req,res) =>{
-    
-}
+exports.updateTask = (req, res) => {
+    const form = new IncomingForm();
+    form.parse(req, (err, fields, files) => {
+        if(err) {
+            res.writeHead(400, { 'content-type': 'application/json'});
+            res.end(JSON.stringify({
+                message: 'Error parsing form'
+            }))
+            return;
+        }})
+    }

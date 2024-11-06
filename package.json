@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "formidable": "^3.5.2"
+  },
+  "name": "taskify",
+  "version": "1.0.0",
+  "description": "testing",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": " \"start node app.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "taskify1"
+  },
+  "keywords": [
+    "[]"
+  ],
+  "author": "\"\",",
+  "license": "ISC"
+}
